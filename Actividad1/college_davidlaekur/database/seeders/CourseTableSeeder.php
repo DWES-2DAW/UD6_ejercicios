@@ -5,8 +5,15 @@ use App\Models\Course;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class CourseSeeder extends Seeder
+
+class CourseTableSeeder extends Seeder
 {
+
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
     public function run(){
     $courses = new Course();
 
@@ -17,7 +24,7 @@ class CourseSeeder extends Seeder
     $courses->save();
     
     $courses = new Course();
-    $courses->id = 'ASIR';
+    $courses->id = 'ASR';
     $courses->name = 'Administración de Sistemas Informáticos en Red';
     $courses->hours = 2000;
     $courses->requires_practice = true;

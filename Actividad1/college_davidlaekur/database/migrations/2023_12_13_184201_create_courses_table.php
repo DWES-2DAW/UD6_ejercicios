@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamps(); // Timestamps (created_at y updated_at)
         });
     }
-    
+
     /**
      * Reverse the migrations.
      */

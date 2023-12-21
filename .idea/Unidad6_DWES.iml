@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Actividad1/college_davidlaekur" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DWES_U06_Actividades_Solución-20231221/Ejercicio 1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DWES_U06_Actividades_Solución-20231221/Ejercicio 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DWES_U06_Actividades_Solución-20231221/Ejercicio 3" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="913014bb-292e-4dc5-9751-051f5fb108bc" />
+  </component>
+</module>
