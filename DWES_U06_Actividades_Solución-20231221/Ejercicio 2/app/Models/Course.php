@@ -10,6 +10,6 @@ class Course extends Model
     protected $fillable = ['id', 'name', 'hours', 'fcts'];
 
     public function subjects(){
-        return $this->hasMany(Subject::class);
+        return $this->hasMany(Subject::class); //un curso tiene muchos subjects
     }
 }
