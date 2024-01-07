@@ -33,7 +33,7 @@
         </div>
 
         <!-- Navegación -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+       <!--  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <span class="navbar-brand">Cursos Informática</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,32 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand">Cursos de Informática</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                @foreach ($courses as $course)
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-{{ $course->id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ Str::upper($course->id) }}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown-{{ $course->id }}">
+                            @foreach ($course->subjects as $subject)
+                                <li><a class="dropdown-item" href="#">{{ $subject->name }}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+</nav>
     </header>
 
     <!-- Footer -->
